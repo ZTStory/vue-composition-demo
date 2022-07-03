@@ -20,3 +20,6 @@ export const SimpleEvents = {
         }
     },
 };
+export const GlobalData = {
+    animationMode: ref("slide"),
+};

@@ -1,10 +1,12 @@
 <template>
     <div class="page_container">
-        <div class="nav_bar">InputPage</div>
+        <div class="nav_bar">
+            <span class="back_btn" @click="router.back()"> &lt; </span>
+            <span class="nav_title">KeepAliveInputPage</span>
+        </div>
         <div class="mgt_50">keywords：<input v-model="keywords" type="text" /></div>
         <div class="mgt_50">selectedResult：<input v-model="selectedRes" type="text" /></div>
         <div class="bb_btn mgt_50" @click="toSelect">toSelectPage</div>
-        <div class="bb_btn mgt_50" @click="router.back()">backIndex</div>
     </div>
 </template>
 <script lang="ts">
@@ -24,7 +26,7 @@ const toSelect = () => {
     SimpleEvents.registerEvent("kInput", (data) => {
         selectedRes.value = data;
     });
-    router.push("Select");
+    router.push("KeepAliveSelect");
 };
 
 const instance = getCurrentInstance()!;

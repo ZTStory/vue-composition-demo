@@ -2,26 +2,42 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
     {
         path: "/",
-        name: "Index",
-        component: () => import(/* webpackChunkName: "Index" */ "@/pages/index.vue"),
+        name: "Home",
+        component: () => import("@/pages/home.vue"),
         meta: {
-            index: 1,
+            depth: 0,
         },
     },
     {
-        path: "/input",
-        name: "Input",
-        component: () => import(/* webpackChunkName: "Index" */ "@/pages/input.vue"),
+        path: "/animationIndex",
+        name: "AnimationIndex",
+        component: () => import("@/pages/animation/index.vue"),
         meta: {
-            index: 1,
+            depth: 1,
         },
     },
     {
-        path: "/select",
-        name: "Select",
-        component: () => import(/* webpackChunkName: "Index" */ "@/pages/select.vue"),
+        path: "/keepAliveIndex",
+        name: "KeepAliveIndex",
+        component: () => import("@/pages/keep-alive-clear/index.vue"),
         meta: {
-            index: 1,
+            depth: 1,
+        },
+    },
+    {
+        path: "/keepAliveInput",
+        name: "KeepAliveInput",
+        component: () => import("@/pages/keep-alive-clear/input.vue"),
+        meta: {
+            depth: 2,
+        },
+    },
+    {
+        path: "/keepAliveSelect",
+        name: "KeepAliveSelect",
+        component: () => import("@/pages/keep-alive-clear/select.vue"),
+        meta: {
+            depth: 3,
         },
     },
 ];

@@ -1,8 +1,10 @@
 <template>
     <div class="page_container">
-        <div class="nav_bar">SelectPage</div>
+        <div class="nav_bar">
+            <span class="back_btn" @click="router.back()"> &lt; </span>
+            <span class="nav_title">KeepAliveSelectPage</span>
+        </div>
         <div class="bb_btn mgt_50" @click="onBack">回调：123456</div>
-        <div class="bb_btn mgt_50" @click="router.back()">backInput</div>
     </div>
 </template>
 <script lang="ts">
