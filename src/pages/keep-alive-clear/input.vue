@@ -11,7 +11,7 @@
 </template>
 <script lang="ts">
 export default {
-    name: "Input",
+    name: "KeepAliveInput",
 };
 </script>
 <script setup lang="ts">
@@ -23,7 +23,7 @@ const router = useRouter();
 const keywords = ref("");
 const selectedRes = ref("");
 const toSelect = () => {
-    SimpleEvents.registerEvent("kInput", (data) => {
+    SimpleEvents.registerEvent("kKeepAliveInput", (data) => {
         selectedRes.value = data;
     });
     router.push("KeepAliveSelect");
@@ -32,7 +32,7 @@ const toSelect = () => {
 const instance = getCurrentInstance()!;
 onBeforeRouteLeave((to, from) => {
     console.log(String(to.name));
-    if (["Index", "Result"].includes(String(to.name))) {
+    if (["KeepAliveIndex"].includes(String(to.name))) {
         removeKeepAliveCache(instance);
     } else {
         resetKeepAliveCache(instance);

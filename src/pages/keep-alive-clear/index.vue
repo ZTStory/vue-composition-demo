@@ -9,7 +9,7 @@
 </template>
 <script lang="ts">
 export default {
-    name: "Index",
+    name: "KeepAliveIndex",
 };
 </script>
 <script setup lang="ts">

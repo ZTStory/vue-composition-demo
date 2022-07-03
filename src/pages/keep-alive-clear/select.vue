@@ -9,7 +9,7 @@
 </template>
 <script lang="ts">
 export default {
-    name: "Select",
+    name: "KeepAliveSelect",
 };
 </script>
 <script setup lang="ts">
@@ -18,7 +18,7 @@ import { useRouter } from "vue-router";
 
 const router = useRouter();
 const onBack = () => {
-    SimpleEvents.emit("kInput", "123456");
+    SimpleEvents.emit("kKeepAliveInput", "123456");
     router.back();
 };
 </script>

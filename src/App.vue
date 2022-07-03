@@ -2,7 +2,7 @@
 import { excludes, GlobalData } from "@/utils";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-const include = ["Index", "Input"];
+const include = ["KeepAliveIndex", "KeepAliveInput"];
 
 const router = useRouter();
 const transitionMode = ref<"default" | "out-in" | "in-out">("default");
