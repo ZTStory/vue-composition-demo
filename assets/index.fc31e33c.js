@@ -1,1 +1,0 @@
-import{d as n,u as o,o as a,c,a as e}from"./index.5e2f8896.js";const _={class:"page_container"},r=e("div",{class:"nav_bar"},"IndexPage",-1),u={name:"Index"},m=n({...u,setup(d){const t=o(),s=()=>{t.push("Input")};return(p,i)=>(a(),c("div",_,[r,e("div",{class:"bb_btn mgt_50",onClick:s},"toInputPage")]))}});export{m as default};
