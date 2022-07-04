@@ -1,5 +1,10 @@
-# vue-keepalive-clear demo
+# vue-composition-demo
 
-适时清理 keepalive 缓存 demo 演示
+Vue 3 项目的小 demo 集合
+
+现已实现：
+
+-  过场动画
+-  KeepAlive灵活清除缓存
 
 
