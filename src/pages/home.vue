@@ -1,14 +1,20 @@
 <template>
     <div class="page_container">
-        <div class="nav_bar">
+        <div class="nav_bar flex_none">
             <span class="nav_title">HomePage</span>
         </div>
-        <div v-for="(item, index) in demoList" :key="index" class="list_item" @click="item.onClick">
-            {{ item.title }}
+        <div class="flex_1 ofa w_100">
+            <div v-for="(item, index) in demoList" :key="index" class="list_item" @click="item.onClick">
+                {{ item.title }}
+            </div>
         </div>
     </div>
 </template>
-
+<script lang="ts">
+export default {
+    name: "Home",
+};
+</script>
 <script setup lang="ts">
 import { useRouter } from "vue-router";
 
@@ -23,6 +29,12 @@ const demoList = [
     }),
     new DemoItem("KeepAliveClear（灵活清理页面缓存方案）", () => {
         router.push("KeepAliveIndex");
+    }),
+    new DemoItem("useLastPosition（记录列表浏览位置）", () => {
+        router.push("LastPositionIndex");
+    }),
+    new DemoItem("usePaging（快捷分页模块，支持自定义）", () => {
+        router.push("PagingIndex");
     }),
 ];
 </script>

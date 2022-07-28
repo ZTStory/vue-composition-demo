@@ -2,7 +2,7 @@
 import { excludes, GlobalData } from "@/utils";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-const include = ["KeepAliveIndex", "KeepAliveInput"];
+const include = ["KeepAliveIndex", "KeepAliveInput", "LastPositionIndex"];
 
 const router = useRouter();
 const transitionMode = ref<"default" | "out-in" | "in-out">("default");
@@ -43,6 +43,7 @@ router.beforeEach((to, from) => {
 <style>
 @import "./assets/common.css";
 @import "./assets/animation.css";
+@import "./assets/flex.css";
 
 .page_container {
     height: 100%;

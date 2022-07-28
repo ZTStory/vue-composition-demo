@@ -16,6 +16,26 @@ body {
     overflow-y: auto;
 }
 
+.w_100 {
+    width: 100%;
+}
+
+.h_100 {
+    height: 100%;
+}
+
+.ofa {
+    overflow: auto;
+}
+
+.border_box {
+    box-sizing: border-box;
+}
+
+.text_center {
+    text-align: center;
+}
+
 .bb_btn {
     height: 44px;
     line-height: 44px;

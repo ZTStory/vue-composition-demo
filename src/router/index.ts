@@ -40,6 +40,30 @@ const routes: Array<RouteRecordRaw> = [
             depth: 3,
         },
     },
+    {
+        path: "/lastPositionIndex",
+        name: "LastPositionIndex",
+        component: () => import("@/pages/use-last-position/index.vue"),
+        meta: {
+            depth: 1,
+        },
+    },
+    {
+        path: "/lastPositionNext",
+        name: "LastPositionNext",
+        component: () => import("@/pages/use-last-position/next.vue"),
+        meta: {
+            depth: 2,
+        },
+    },
+    {
+        path: "/pagingIndex",
+        name: "PagingIndex",
+        component: () => import("@/pages/use-paging/index.vue"),
+        meta: {
+            depth: 1,
+        },
+    },
 ];
 
 const router = createRouter({
