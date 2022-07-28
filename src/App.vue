@@ -32,9 +32,9 @@ router.beforeEach((to, from) => {
 
 <template>
     <router-view v-slot="{ Component, route }">
-        <transition :name="route.meta.transitionName" :mode="transitionMode">
+        <transition :name="String(route.meta.transitionName)" :mode="transitionMode">
             <keep-alive :include="include" :exclude="excludes">
-                <Component :is="Component" />
+                <Component :is="Component"></Component>
             </keep-alive>
         </transition>
     </router-view>
