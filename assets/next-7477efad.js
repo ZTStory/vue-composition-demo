@@ -1,0 +1,1 @@
+import{d as a,u as n,o,c,a as e,e as r}from"./index-deba2ef6.js";const _={class:"page_container"},i={class:"nav_bar"},l=e("span",{class:"nav_title"},"LastPositionNextPage",-1),f=a({__name:"next",setup(p){const t=n();return(d,s)=>(o(),c("div",_,[e("div",i,[e("span",{class:"back_btn",onClick:s[0]||(s[0]=u=>r(t).back())}," < "),l])]))}});export{f as default};
