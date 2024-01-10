@@ -1,0 +1,1 @@
+import{d as o,o as t,c as n}from"./index-03a3b8e0.js";const r=new Worker("/vue-composition-demo/auto-update.worker.js",{type:"module"});r.addEventListener("message",()=>{confirm("页面有更新，点击确定刷新页面")&&location.reload()});const a={name:"AutoUpdate"},p=o({...a,setup(e){return(s,c)=>(t(),n("div",null,"已开启页面更新监听，具体查看 console 面板"))}});export{p as default};

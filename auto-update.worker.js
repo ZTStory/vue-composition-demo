@@ -55,4 +55,4 @@ function autoUpdate(duration = 2000) {
     }, duration);
 }
 
-autoUpdate();
+autoUpdate(30 * 1000);
