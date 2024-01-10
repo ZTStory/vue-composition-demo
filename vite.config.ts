@@ -17,7 +17,7 @@ export default defineConfig({
             inject: {
                 data: {
                     title: "VueCompositionDemo",
-                    injectScript: `<script src="${baseUrl}catch-script-load-error.js"></script>`,
+                    // injectScript: `<script type="module" src="${baseUrl}catch-script-load-error.js"></script>`,
                 },
                 // tags: [
                 //     {
