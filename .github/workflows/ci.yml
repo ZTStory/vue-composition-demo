@@ -18,10 +18,18 @@ jobs:
             - name: Checkout
               uses: actions/checkout@master
 
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                node-version: 18
+
+            - name: Install pnpm
+              run: npm install -g pnpm
+
             - name: Install and Build
               run: |
-                  npm install
-                  npm run build
+                  pnpm install
+                  pnpm run build
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@v4.3.3
