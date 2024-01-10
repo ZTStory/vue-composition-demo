@@ -36,6 +36,12 @@ const demoList = [
     new DemoItem("usePaging（快捷分页模块，支持自定义）", () => {
         router.push("PagingIndex");
     }),
+    new DemoItem("autoUpdate（纯前端检查代码是否更新）", () => {
+        router.push("AutoUpdate");
+    }),
+    new DemoItem("postmessagePromise（Promise化通信方案）", () => {
+        router.push("PostMessagePromise");
+    }),
 ];
 </script>
 

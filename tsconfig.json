@@ -17,6 +17,6 @@
             "@/*": ["src/*"]
         }
     },
-    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "public/catch-script-load-error.ts", "public/catch-script-load-error.ts", "src/utils/auto-update.worker.js", "src/utils/auto-update.worker.js"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
